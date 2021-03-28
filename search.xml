@@ -1024,8 +1024,8 @@ ls=ls     --show-control-chars -F</code></pre>
         <category>Tip</category>
       </categories>
       <tags>
-        <tag>iPhone</tag>
         <tag>Photography</tag>
+        <tag>iPhone</tag>
       </tags>
   </entry>
   <entry>
@@ -1655,19 +1655,6 @@ ls=ls     --show-control-chars -F</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Debug | AttributeError： module ‘tensorflow._api.v2.image‘ has no attribute ‘resize_images‘</title>
-    <url>/2021/03/27/Debug/%E2%80%98resize_images%E2%80%98/</url>
-    <content><![CDATA[<p><strong>报错信息</strong><br><code>AttributeError: module &#39;tensorflow._api.v2.image&#39; has no attribute &#39;resize_images&#39;</code></p>
-<p><strong>分析</strong><br>还是老问题，TensorFlow版本问题</p>
-<p><strong>解决方法</strong><br>将<code>resize_images</code>换成<code>resize</code></p>]]></content>
-      <categories>
-        <category>Debug</category>
-      </categories>
-      <tags>
-        <tag>Debug</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Debug | &#39;wget&#39; 不是内部或外部命令，也不是可运行的程序 或批处理文件。</title>
     <url>/2021/03/27/Debug/%E2%80%98wget%E2%80%98%20%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p><strong>报错信息</strong><br><code>&#39;wget&#39; 不是内部或外部命令，也不是可运行的程序或批处理文件。</code></p>
@@ -1679,6 +1666,19 @@ ls=ls     --show-control-chars -F</code></pre>
 <p>然后这篇<a href="https://blog.csdn.net/yinhuaiya/article/details/78675605">博客</a>提供了将下载文件保存到指定目录的方法。<br>比如将网址的文件保存到目录下，使用<code>wget -P 目录 网址</code>指令即可。</p>
 <p>这样的话，很多类似问题都可以类推啦。</p>
 <p>没找到一劳永逸的方法，尝试了一些，包括添加到系统环境变量，也没成功，如果大家知道，欢迎提建议~</p>]]></content>
+      <categories>
+        <category>Debug</category>
+      </categories>
+      <tags>
+        <tag>Debug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Debug | AttributeError： module ‘tensorflow._api.v2.image‘ has no attribute ‘resize_images‘</title>
+    <url>/2021/03/27/Debug/%E2%80%98resize_images%E2%80%98/</url>
+    <content><![CDATA[<p><strong>报错信息</strong><br><code>AttributeError: module &#39;tensorflow._api.v2.image&#39; has no attribute &#39;resize_images&#39;</code></p>
+<p><strong>分析</strong><br>还是老问题，TensorFlow版本问题</p>
+<p><strong>解决方法</strong><br>将<code>resize_images</code>换成<code>resize</code></p>]]></content>
       <categories>
         <category>Debug</category>
       </categories>
@@ -1700,11 +1700,13 @@ ls=ls     --show-control-chars -F</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Debug | [Errno 11004] getaddrinfo failed</title>
-    <url>/2021/03/27/Debug/%5BErrno%2011004%5D/</url>
-    <content><![CDATA[<p><strong>报错信息</strong><br><code>URLError: &lt;urlopen error [Errno 11004] getaddrinfo failed&gt;</code></p>
-<p><strong>分析</strong><br>发现是<code>df = sns.load_dataset(&quot;penguins&quot;)</code>这一句引起的，seaborn的<code>load_dataset</code>国内现在貌似无法用。</p>
-<p><strong>解决方法</strong><br>科学上网可以解决</p>]]></content>
+    <title>Debug | [WinError 10061] 由于目标计算机积极拒绝，无法连接。</title>
+    <url>/2021/03/27/Debug/%5BWinError%2010061%5D/</url>
+    <content><![CDATA[<p><strong>报错信息</strong><br><code>URLError: &lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt; </code></p>
+<p><strong>分析</strong><br>发现是<code>sns.load_dataset</code>这里出了问题。在下载网络数据等文件的时候，常出现该问题。</p>
+<p><strong>解决方法</strong></p>
+<p><strong>solution 1：</strong> 在浏览器代理设置中，将局域网设置中将代理服务器取消选中<br><strong>solution 2：</strong> 在浏览器代理设置中将自动检测打开，设置–&gt;代理设置–&gt;弹出Internet属性–&gt;局域网设置–&gt;自动检测设置–&gt;重新运行<br><strong>solution 3：</strong> 我的问题是在科学上网的时候关闭了Http代理，打开<strong>全局代理</strong>即可。</p>
+<p><strong>参考文献</strong><br><a href="https://www.cnblogs.com/tynam/p/11730736.html">很详细的一个解决方案</a></p>]]></content>
       <categories>
         <category>Debug</category>
       </categories>
@@ -1713,13 +1715,11 @@ ls=ls     --show-control-chars -F</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Debug | [WinError 10061] 由于目标计算机积极拒绝，无法连接。</title>
-    <url>/2021/03/27/Debug/%5BWinError%2010061%5D/</url>
-    <content><![CDATA[<p><strong>报错信息</strong><br><code>URLError: &lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt; </code></p>
-<p><strong>分析</strong><br>发现是<code>sns.load_dataset</code>这里出了问题。在下载网络数据等文件的时候，常出现该问题。</p>
-<p><strong>解决方法</strong></p>
-<p><strong>solution 1：</strong> 在浏览器代理设置中，将局域网设置中将代理服务器取消选中<br><strong>solution 2：</strong> 在浏览器代理设置中将自动检测打开，设置–&gt;代理设置–&gt;弹出Internet属性–&gt;局域网设置–&gt;自动检测设置–&gt;重新运行<br><strong>solution 3：</strong> 我的问题是在科学上网的时候关闭了Http代理，打开<strong>全局代理</strong>即可。</p>
-<p><strong>参考文献</strong><br><a href="https://www.cnblogs.com/tynam/p/11730736.html">很详细的一个解决方案</a></p>]]></content>
+    <title>Debug | [Errno 11004] getaddrinfo failed</title>
+    <url>/2021/03/27/Debug/%5BErrno%2011004%5D/</url>
+    <content><![CDATA[<p><strong>报错信息</strong><br><code>URLError: &lt;urlopen error [Errno 11004] getaddrinfo failed&gt;</code></p>
+<p><strong>分析</strong><br>发现是<code>df = sns.load_dataset(&quot;penguins&quot;)</code>这一句引起的，seaborn的<code>load_dataset</code>国内现在貌似无法用。</p>
+<p><strong>解决方法</strong><br>科学上网可以解决</p>]]></content>
       <categories>
         <category>Debug</category>
       </categories>
@@ -3941,6 +3941,31 @@ Done.</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Excel | Data Analysis Excel教程</title>
+    <url>/2021/03/27/DSci/Excel/DAExcel%E6%95%99%E7%A8%8B(DAuE%E7%AC%94%E8%AE%B0)/</url>
+    <content><![CDATA[<p>上了门Coursera，里面介绍了Excel的简单用法，很多之前都学过了，这次做下记录，方便以后查找。</p>
+<h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><h2 id="打开commas-tab分割的txt"><a href="#打开commas-tab分割的txt" class="headerlink" title="打开commas,tab分割的txt"></a>打开commas,tab分割的txt</h2><p>就使用excel打开即可，具体设置具体分析</p>
+<h2 id="自动列宽"><a href="#自动列宽" class="headerlink" title="自动列宽"></a>自动列宽</h2><p>有时候导入的某些数据因为列宽不够无法显示，可以<code>选择所有列</code>-&gt;<code>双击任意移动符号</code>可以自动换列宽</p>
+<h2 id="移动-选择"><a href="#移动-选择" class="headerlink" title="移动/选择"></a>移动/选择</h2><p>移动到最*一列/行<br><strong>Row</strong>: <code>Ctrl+down/up</code><br><strong>Column</strong>: <code>Ctrl+right/left</code></p>
+<p>选择到最*一列/行<br><strong>Row</strong>: <code>Ctrl+shift+down/up</code><br><strong>Column</strong>: <code>Ctrl+shift+right/left</code></p>
+<h1 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h1><h2 id="公式套用"><a href="#公式套用" class="headerlink" title="公式套用"></a>公式套用</h2><p>在列了一个cell的公式后，<code>双击</code>公式后的小十字符号即可直接套用当前列</p>
+<h2 id="SUMIF"><a href="#SUMIF" class="headerlink" title="SUMIF()"></a>SUMIF()</h2><p><code>SUMIF(range,criteria,[sum_range])</code></p>
+<h2 id="COUNTIF"><a href="#COUNTIF" class="headerlink" title="COUNTIF()"></a>COUNTIF()</h2><p><code>COUNTIF(count_range,condition)</code></p>
+<h2 id="IF"><a href="#IF" class="headerlink" title="IF()"></a>IF()</h2><p><code>IF(loical_test,value_if_true,value_if_false)</code></p>
+<p>Nested IF:<br><code>IF(loical_test,value_if_true,IF(...))</code></p>
+<h2 id="VLOOKUP"><a href="#VLOOKUP" class="headerlink" title="VLOOKUP()"></a>VLOOKUP()</h2><p><code>VLOOKUP(lookup_value,table_array,col_index_num,[range_lookup])</code><br><strong>range_lookup</strong>: TRUE/FALSE<br>TRUE :范围匹配<br>FALSE:完全匹配<br><img src="https://img-blog.csdnimg.cn/20210105121215949.png#pic_center"><br><img src="https://img-blog.csdnimg.cn/20210105121330937.png#pic_center"><br><strong>Across Worksheets</strong>:<br><img src="https://img-blog.csdnimg.cn/20210105121516887.png#pic_center"></p>
+<h2 id="HLOOKUP"><a href="#HLOOKUP" class="headerlink" title="HLOOKUP()"></a>HLOOKUP()</h2><p><code>HLOOKUP(lookup_value,table_array,row_index_num,[range_lookup])</code><br><strong>range_lookup</strong>: TRUE/FALSE<br>TRUE :范围匹配<br>FALSE:完全匹配</p>
+<h1 id="Pivot-table"><a href="#Pivot-table" class="headerlink" title="Pivot table"></a>Pivot table</h1><p>数据透视图，超级有用，其中的pivot charts交互式也很好 :) 多多摸索</p>]]></content>
+      <categories>
+        <category>DSci</category>
+        <category>Excel</category>
+      </categories>
+      <tags>
+        <tag>DataScience</tag>
+        <tag>Excel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Coursera | Introduction to Data Science in Python（University of Michigan）| Quiz</title>
     <url>/2021/03/27/Coursera/Intro2DS/Quiz/</url>
     <content><![CDATA[<p>&emsp;&emsp;最后还是把assignment代码放出来了，这门课的assignment还是有点难度的，特别是assigment4（哀怨），放给大家参考啦~<br>&emsp;&emsp; 有时间（需求）就把所有代码放到github上（好担心被河蟹啊）<br>&emsp;&emsp; 相关链接：<br>&emsp;&emsp; <a href="https://ycchen00.github.io/2020/12/07/Coursera/Intro2DS/Quiz/">Coursera | Introduction to Data Science in Python（University of Michigan）| Quiz</a><br>&emsp;&emsp; <a href="https://ycchen00.github.io/2020/12/07/Coursera/Intro2DS/Assignment1/">Coursera | Introduction to Data Science in Python（University of Michigan）| Assignment1</a><br>&emsp;&emsp; <a href="https://ycchen00.github.io/2020/12/07/Coursera/Intro2DS/Assignment2/">Coursera | Introduction to Data Science in Python（University of Michigan）| Assignment2</a><br>&emsp;&emsp; <a href="https://ycchen00.github.io/2020/12/07/Coursera/Intro2DS/Assignment3/">Coursera | Introduction to Data Science in Python（University of Michigan）| Assignment3</a><br>&emsp;&emsp; <a href="https://ycchen00.github.io/2020/12/07/Coursera/Intro2DS/Assignment4/">Coursera | Introduction to Data Science in Python（University of Michigan）| Assignment4</a><br>&emsp;&emsp; CSDN链接：<br>&emsp;&emsp; <a href="https://blog.csdn.net/weixin_43360896/article/details/109544058">Coursera | Introduction to Data Science in Python（University of Michigan）| Quiz答案</a><br>&emsp;&emsp; <a href="https://blog.csdn.net/weixin_43360896/article/details/109583609">Coursera | Introduction to Data Science in Python（University of Michigan）| Assignment1</a><br>&emsp;&emsp; <a href="https://blog.csdn.net/weixin_43360896/article/details/109577773">Coursera | Introduction to Data Science in Python（University of Michigan）| Assignment2</a><br>&emsp;&emsp; <a href="https://blog.csdn.net/weixin_43360896/article/details/109583813">Coursera | Introduction to Data Science in Python（University of Michigan）| Assignment3</a><br>&emsp;&emsp; <a href="https://blog.csdn.net/weixin_43360896/article/details/109584609">Coursera | Introduction to Data Science in Python（University of Michigan）| Assignment4</a></p>
@@ -3989,31 +4014,6 @@ Done.</code></pre>
         <tag>DataScience</tag>
         <tag>Python</tag>
         <tag>SQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Excel | Data Analysis Excel教程</title>
-    <url>/2021/03/27/DSci/Excel/DAExcel%E6%95%99%E7%A8%8B(DAuE%E7%AC%94%E8%AE%B0)/</url>
-    <content><![CDATA[<p>上了门Coursera，里面介绍了Excel的简单用法，很多之前都学过了，这次做下记录，方便以后查找。</p>
-<h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><h2 id="打开commas-tab分割的txt"><a href="#打开commas-tab分割的txt" class="headerlink" title="打开commas,tab分割的txt"></a>打开commas,tab分割的txt</h2><p>就使用excel打开即可，具体设置具体分析</p>
-<h2 id="自动列宽"><a href="#自动列宽" class="headerlink" title="自动列宽"></a>自动列宽</h2><p>有时候导入的某些数据因为列宽不够无法显示，可以<code>选择所有列</code>-&gt;<code>双击任意移动符号</code>可以自动换列宽</p>
-<h2 id="移动-选择"><a href="#移动-选择" class="headerlink" title="移动/选择"></a>移动/选择</h2><p>移动到最*一列/行<br><strong>Row</strong>: <code>Ctrl+down/up</code><br><strong>Column</strong>: <code>Ctrl+right/left</code></p>
-<p>选择到最*一列/行<br><strong>Row</strong>: <code>Ctrl+shift+down/up</code><br><strong>Column</strong>: <code>Ctrl+shift+right/left</code></p>
-<h1 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h1><h2 id="公式套用"><a href="#公式套用" class="headerlink" title="公式套用"></a>公式套用</h2><p>在列了一个cell的公式后，<code>双击</code>公式后的小十字符号即可直接套用当前列</p>
-<h2 id="SUMIF"><a href="#SUMIF" class="headerlink" title="SUMIF()"></a>SUMIF()</h2><p><code>SUMIF(range,criteria,[sum_range])</code></p>
-<h2 id="COUNTIF"><a href="#COUNTIF" class="headerlink" title="COUNTIF()"></a>COUNTIF()</h2><p><code>COUNTIF(count_range,condition)</code></p>
-<h2 id="IF"><a href="#IF" class="headerlink" title="IF()"></a>IF()</h2><p><code>IF(loical_test,value_if_true,value_if_false)</code></p>
-<p>Nested IF:<br><code>IF(loical_test,value_if_true,IF(...))</code></p>
-<h2 id="VLOOKUP"><a href="#VLOOKUP" class="headerlink" title="VLOOKUP()"></a>VLOOKUP()</h2><p><code>VLOOKUP(lookup_value,table_array,col_index_num,[range_lookup])</code><br><strong>range_lookup</strong>: TRUE/FALSE<br>TRUE :范围匹配<br>FALSE:完全匹配<br><img src="https://img-blog.csdnimg.cn/20210105121215949.png#pic_center"><br><img src="https://img-blog.csdnimg.cn/20210105121330937.png#pic_center"><br><strong>Across Worksheets</strong>:<br><img src="https://img-blog.csdnimg.cn/20210105121516887.png#pic_center"></p>
-<h2 id="HLOOKUP"><a href="#HLOOKUP" class="headerlink" title="HLOOKUP()"></a>HLOOKUP()</h2><p><code>HLOOKUP(lookup_value,table_array,row_index_num,[range_lookup])</code><br><strong>range_lookup</strong>: TRUE/FALSE<br>TRUE :范围匹配<br>FALSE:完全匹配</p>
-<h1 id="Pivot-table"><a href="#Pivot-table" class="headerlink" title="Pivot table"></a>Pivot table</h1><p>数据透视图，超级有用，其中的pivot charts交互式也很好 :) 多多摸索</p>]]></content>
-      <categories>
-        <category>DSci</category>
-        <category>Excel</category>
-      </categories>
-      <tags>
-        <tag>DataScience</tag>
-        <tag>Excel</tag>
       </tags>
   </entry>
   <entry>
@@ -5918,6 +5918,32 @@ It would be interesting to see if there is any evidence of a link between vaccin
       </tags>
   </entry>
   <entry>
+    <title>Coursera | Data Science for Business Innovation (EIT) | Quiz</title>
+    <url>/2021/03/27/Coursera/DS4BI-Quiz/</url>
+    <content><![CDATA[<h1 id="Data-Science-for-Business-Innovation"><a href="#Data-Science-for-Business-Innovation" class="headerlink" title="Data Science for Business Innovation"></a>Data Science for Business Innovation</h1><p><img src="https://img-blog.csdnimg.cn/20210204142832110.png#pic_center"><br>就个人感受来说这门课一般，只能说适合初学者吧，上课体验不佳，特别是每节课开头那个叮铃铃铃声，上完整个人仿佛丧失了生活希望(也不是针对这门课 :()。anyway，简单介绍了下DS，初学者可以试下，花点时间，一天就搞定了，还是不够UMich的舒服，以后上多了可以来个评分~</p>
+<h1 id="Quiz-答案"><a href="#Quiz-答案" class="headerlink" title="Quiz 答案"></a>Quiz 答案</h1><p>这里放下各个Quiz答案，Quiz也有一些槽点，主要是问题和上课内容关系不大，也不具有启发性，不过也不难，做做就行。</p>
+<h2 id="Week1"><a href="#Week1" class="headerlink" title="Week1"></a>Week1</h2><h3 id="Data-driven-Decision"><a href="#Data-driven-Decision" class="headerlink" title="Data-driven Decision"></a>Data-driven Decision</h3><p><img src="https://img-blog.csdnimg.cn/20210103122846399.png#pic_center"></p>
+<h3 id="Big-Data"><a href="#Big-Data" class="headerlink" title="Big Data"></a>Big Data</h3><p><img src="https://img-blog.csdnimg.cn/20210103122915562.png#pic_center"></p>
+<h2 id="Week2"><a href="#Week2" class="headerlink" title="Week2"></a>Week2</h2><h3 id="Netflix-succes-story"><a href="#Netflix-succes-story" class="headerlink" title="Netflix succes story"></a>Netflix succes story</h3><p><img src="https://img-blog.csdnimg.cn/20210103122946879.png#pic_center"></p>
+<h3 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h3><p><img src="https://img-blog.csdnimg.cn/20210103123058687.png#pic_center"></p>
+<h3 id="Solving-Problems-P-VS-ML"><a href="#Solving-Problems-P-VS-ML" class="headerlink" title="Solving Problems P VS ML"></a>Solving Problems P VS ML</h3><p><img src="https://img-blog.csdnimg.cn/20210103123116127.png#pic_center"></p>
+<h2 id="Week3"><a href="#Week3" class="headerlink" title="Week3"></a>Week3</h2><h3 id="Linear-Regression"><a href="#Linear-Regression" class="headerlink" title="Linear Regression"></a>Linear Regression</h3><p><img src="https://img-blog.csdnimg.cn/20210103123230614.png#pic_center"></p>
+<h3 id="Naive-Bayes-Classification"><a href="#Naive-Bayes-Classification" class="headerlink" title="Naive Bayes Classification"></a>Naive Bayes Classification</h3><p><img src="https://img-blog.csdnimg.cn/20210103123252862.png#pic_center"></p>
+<h3 id="Decision-Trees-and-Random-Forests"><a href="#Decision-Trees-and-Random-Forests" class="headerlink" title="Decision Trees and Random Forests"></a>Decision Trees and Random Forests</h3><p><img src="https://img-blog.csdnimg.cn/20210103123312147.png#pic_center"></p>
+<h3 id="Logistic-Regression"><a href="#Logistic-Regression" class="headerlink" title="Logistic Regression"></a>Logistic Regression</h3><p>这里叨下，第2题怎么都选不对，其实一开始觉得都错来着，该课程的quiz貌似经常出问题，nvm~<br><img src="https://img-blog.csdnimg.cn/20210103123721285.png#pic_center"></p>
+<h3 id="K-means-Clustering"><a href="#K-means-Clustering" class="headerlink" title="K-means Clustering"></a>K-means Clustering</h3><p><img src="https://img-blog.csdnimg.cn/20210103123457115.png#pic_center"></p>
+<h2 id="Week4"><a href="#Week4" class="headerlink" title="Week4"></a>Week4</h2><h3 id="Data-Science-Challenges"><a href="#Data-Science-Challenges" class="headerlink" title="Data Science Challenges"></a>Data Science Challenges</h3><p><img src="https://img-blog.csdnimg.cn/20210103123512183.png#pic_center"></p>]]></content>
+      <categories>
+        <category>Coursera</category>
+        <category>DataScience</category>
+      </categories>
+      <tags>
+        <tag>Coursera</tag>
+        <tag>DataScience</tag>
+        <tag>Business</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Coursera | 助学金申请流程</title>
     <url>/2021/03/27/Coursera/Coursera_Financial_Aid/</url>
     <content><![CDATA[<p>Coursera一直是一个很好的线上学习视频，从中获益良多。Coursera可以免费旁听，也可以付费学习获得学位，但是旁听是无法参加作业批改的，包括编程Autograder和peer review。这里介绍下如何免费上Coursera，作为学生，如何白嫖是门学问$_$</p>
@@ -5968,6 +5994,29 @@ It would be interesting to see if there is any evidence of a link between vaccin
       </tags>
   </entry>
   <entry>
+    <title>Coursera | Data Visualization with Python (IBM) | Quiz</title>
+    <url>/2021/03/27/Coursera/DVwP-Quiz/</url>
+    <content><![CDATA[<p>课程笔记在这~ <a href="https://ycchen00.github.io/2021/02/04/DSci/DataFrame%E7%9A%84%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0(DVwP%E7%AC%94%E8%AE%B0)/">Pandas | Pandas入门 DataFrame的常用函数(DVwP笔记)</a></p>
+<h1 id="Data-Visualization-with-Python"><a href="#Data-Visualization-with-Python" class="headerlink" title="Data Visualization with Python"></a>Data Visualization with Python</h1><p>在学完了DS各种课程后，觉得自己Visualization方面还是一般般。于是在coursera发现了这门课程，只有3周，但是课程内容很好，都是通过实际数据库来讲解，包括Pandas DataFrame的画图，以及华夫饼图、词云、Folium、Seaborn等内容。比较满意和推荐~</p>
+<p><img src="https://img-blog.csdnimg.cn/20210204142250699.png#pic_center"></p>
+<h2 id="Quiz-答案"><a href="#Quiz-答案" class="headerlink" title="Quiz 答案"></a>Quiz 答案</h2><p>3周5个Quiz，内容都比较简单，这里放给大家参考下~</p>
+<h2 id="Quiz1"><a href="#Quiz1" class="headerlink" title="Quiz1"></a>Quiz1</h2><p><img src="https://img-blog.csdnimg.cn/20201229172724888.png#pic_center"></p>
+<h2 id="Quiz2-BVT"><a href="#Quiz2-BVT" class="headerlink" title="Quiz2-BVT"></a>Quiz2-BVT</h2><p><img src="https://img-blog.csdnimg.cn/20201229172745347.png#pic_center"></p>
+<h2 id="Quiz2-SVT"><a href="#Quiz2-SVT" class="headerlink" title="Quiz2-SVT"></a>Quiz2-SVT</h2><p><img src="https://img-blog.csdnimg.cn/20201229172802614.png#pic_center"></p>
+<h2 id="Quiz3-AVT"><a href="#Quiz3-AVT" class="headerlink" title="Quiz3-AVT"></a>Quiz3-AVT</h2><p><img src="https://img-blog.csdnimg.cn/2020122917282448.png#pic_center"></p>
+<h2 id="Quiz3-VGD"><a href="#Quiz3-VGD" class="headerlink" title="Quiz3-VGD"></a>Quiz3-VGD</h2><p><img src="https://img-blog.csdnimg.cn/20201229172840377.png#pic_center"></p>]]></content>
+      <categories>
+        <category>Coursera</category>
+        <category>DataScience</category>
+      </categories>
+      <tags>
+        <tag>Coursera</tag>
+        <tag>DataScience</tag>
+        <tag>Pandas</tag>
+        <tag>Visualization</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Coursera | Introduction to Data Analysis Using Excel (Rice University) | Quiz</title>
     <url>/2021/03/27/Coursera/DAuE-Quiz/</url>
     <content><![CDATA[<p><a href="https://ycchen00.github.io/2021/02/04/DSci/Excel/DAExcel%E6%95%99%E7%A8%8B(DAuE%E7%AC%94%E8%AE%B0)/">Excel | Data Analysis Excel教程(DAuE笔记)</a></p>
@@ -6011,55 +6060,6 @@ It would be interesting to see if there is any evidence of a link between vaccin
         <tag>Coursera</tag>
         <tag>DataScience</tag>
         <tag>Excel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Coursera | Data Science for Business Innovation (EIT) | Quiz</title>
-    <url>/2021/03/27/Coursera/DS4BI-Quiz/</url>
-    <content><![CDATA[<h1 id="Data-Science-for-Business-Innovation"><a href="#Data-Science-for-Business-Innovation" class="headerlink" title="Data Science for Business Innovation"></a>Data Science for Business Innovation</h1><p><img src="https://img-blog.csdnimg.cn/20210204142832110.png#pic_center"><br>就个人感受来说这门课一般，只能说适合初学者吧，上课体验不佳，特别是每节课开头那个叮铃铃铃声，上完整个人仿佛丧失了生活希望(也不是针对这门课 :()。anyway，简单介绍了下DS，初学者可以试下，花点时间，一天就搞定了，还是不够UMich的舒服，以后上多了可以来个评分~</p>
-<h1 id="Quiz-答案"><a href="#Quiz-答案" class="headerlink" title="Quiz 答案"></a>Quiz 答案</h1><p>这里放下各个Quiz答案，Quiz也有一些槽点，主要是问题和上课内容关系不大，也不具有启发性，不过也不难，做做就行。</p>
-<h2 id="Week1"><a href="#Week1" class="headerlink" title="Week1"></a>Week1</h2><h3 id="Data-driven-Decision"><a href="#Data-driven-Decision" class="headerlink" title="Data-driven Decision"></a>Data-driven Decision</h3><p><img src="https://img-blog.csdnimg.cn/20210103122846399.png#pic_center"></p>
-<h3 id="Big-Data"><a href="#Big-Data" class="headerlink" title="Big Data"></a>Big Data</h3><p><img src="https://img-blog.csdnimg.cn/20210103122915562.png#pic_center"></p>
-<h2 id="Week2"><a href="#Week2" class="headerlink" title="Week2"></a>Week2</h2><h3 id="Netflix-succes-story"><a href="#Netflix-succes-story" class="headerlink" title="Netflix succes story"></a>Netflix succes story</h3><p><img src="https://img-blog.csdnimg.cn/20210103122946879.png#pic_center"></p>
-<h3 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h3><p><img src="https://img-blog.csdnimg.cn/20210103123058687.png#pic_center"></p>
-<h3 id="Solving-Problems-P-VS-ML"><a href="#Solving-Problems-P-VS-ML" class="headerlink" title="Solving Problems P VS ML"></a>Solving Problems P VS ML</h3><p><img src="https://img-blog.csdnimg.cn/20210103123116127.png#pic_center"></p>
-<h2 id="Week3"><a href="#Week3" class="headerlink" title="Week3"></a>Week3</h2><h3 id="Linear-Regression"><a href="#Linear-Regression" class="headerlink" title="Linear Regression"></a>Linear Regression</h3><p><img src="https://img-blog.csdnimg.cn/20210103123230614.png#pic_center"></p>
-<h3 id="Naive-Bayes-Classification"><a href="#Naive-Bayes-Classification" class="headerlink" title="Naive Bayes Classification"></a>Naive Bayes Classification</h3><p><img src="https://img-blog.csdnimg.cn/20210103123252862.png#pic_center"></p>
-<h3 id="Decision-Trees-and-Random-Forests"><a href="#Decision-Trees-and-Random-Forests" class="headerlink" title="Decision Trees and Random Forests"></a>Decision Trees and Random Forests</h3><p><img src="https://img-blog.csdnimg.cn/20210103123312147.png#pic_center"></p>
-<h3 id="Logistic-Regression"><a href="#Logistic-Regression" class="headerlink" title="Logistic Regression"></a>Logistic Regression</h3><p>这里叨下，第2题怎么都选不对，其实一开始觉得都错来着，该课程的quiz貌似经常出问题，nvm~<br><img src="https://img-blog.csdnimg.cn/20210103123721285.png#pic_center"></p>
-<h3 id="K-means-Clustering"><a href="#K-means-Clustering" class="headerlink" title="K-means Clustering"></a>K-means Clustering</h3><p><img src="https://img-blog.csdnimg.cn/20210103123457115.png#pic_center"></p>
-<h2 id="Week4"><a href="#Week4" class="headerlink" title="Week4"></a>Week4</h2><h3 id="Data-Science-Challenges"><a href="#Data-Science-Challenges" class="headerlink" title="Data Science Challenges"></a>Data Science Challenges</h3><p><img src="https://img-blog.csdnimg.cn/20210103123512183.png#pic_center"></p>]]></content>
-      <categories>
-        <category>Coursera</category>
-        <category>DataScience</category>
-      </categories>
-      <tags>
-        <tag>Coursera</tag>
-        <tag>DataScience</tag>
-        <tag>Business</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Coursera | Data Visualization with Python (IBM) | Quiz</title>
-    <url>/2021/03/27/Coursera/DVwP-Quiz/</url>
-    <content><![CDATA[<p>课程笔记在这~ <a href="https://ycchen00.github.io/2021/02/04/DSci/DataFrame%E7%9A%84%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0(DVwP%E7%AC%94%E8%AE%B0)/">Pandas | Pandas入门 DataFrame的常用函数(DVwP笔记)</a></p>
-<h1 id="Data-Visualization-with-Python"><a href="#Data-Visualization-with-Python" class="headerlink" title="Data Visualization with Python"></a>Data Visualization with Python</h1><p>在学完了DS各种课程后，觉得自己Visualization方面还是一般般。于是在coursera发现了这门课程，只有3周，但是课程内容很好，都是通过实际数据库来讲解，包括Pandas DataFrame的画图，以及华夫饼图、词云、Folium、Seaborn等内容。比较满意和推荐~</p>
-<p><img src="https://img-blog.csdnimg.cn/20210204142250699.png#pic_center"></p>
-<h2 id="Quiz-答案"><a href="#Quiz-答案" class="headerlink" title="Quiz 答案"></a>Quiz 答案</h2><p>3周5个Quiz，内容都比较简单，这里放给大家参考下~</p>
-<h2 id="Quiz1"><a href="#Quiz1" class="headerlink" title="Quiz1"></a>Quiz1</h2><p><img src="https://img-blog.csdnimg.cn/20201229172724888.png#pic_center"></p>
-<h2 id="Quiz2-BVT"><a href="#Quiz2-BVT" class="headerlink" title="Quiz2-BVT"></a>Quiz2-BVT</h2><p><img src="https://img-blog.csdnimg.cn/20201229172745347.png#pic_center"></p>
-<h2 id="Quiz2-SVT"><a href="#Quiz2-SVT" class="headerlink" title="Quiz2-SVT"></a>Quiz2-SVT</h2><p><img src="https://img-blog.csdnimg.cn/20201229172802614.png#pic_center"></p>
-<h2 id="Quiz3-AVT"><a href="#Quiz3-AVT" class="headerlink" title="Quiz3-AVT"></a>Quiz3-AVT</h2><p><img src="https://img-blog.csdnimg.cn/2020122917282448.png#pic_center"></p>
-<h2 id="Quiz3-VGD"><a href="#Quiz3-VGD" class="headerlink" title="Quiz3-VGD"></a>Quiz3-VGD</h2><p><img src="https://img-blog.csdnimg.cn/20201229172840377.png#pic_center"></p>]]></content>
-      <categories>
-        <category>Coursera</category>
-        <category>DataScience</category>
-      </categories>
-      <tags>
-        <tag>Coursera</tag>
-        <tag>DataScience</tag>
-        <tag>Pandas</tag>
-        <tag>Visualization</tag>
       </tags>
   </entry>
   <entry>

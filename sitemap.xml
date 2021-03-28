@@ -44,13 +44,6 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/about/index.html</loc>
-    
-    <lastmod>2021-03-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://ycchen00.github.io/admin/config.json</loc>
     
     <lastmod>2021-03-27</lastmod>
@@ -59,6 +52,13 @@
   
   <url>
     <loc>https://ycchen00.github.io/admin/index.html</loc>
+    
+    <lastmod>2021-03-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/about/index.html</loc>
     
     <lastmod>2021-03-27</lastmod>
     
@@ -247,14 +247,14 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/2021/03/27/Debug/%E2%80%98resize_images%E2%80%98/</loc>
+    <loc>https://ycchen00.github.io/2021/03/27/Debug/%E2%80%98wget%E2%80%98%20%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4/</loc>
     
     <lastmod>2021-03-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/2021/03/27/Debug/%E2%80%98wget%E2%80%98%20%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://ycchen00.github.io/2021/03/27/Debug/%E2%80%98resize_images%E2%80%98/</loc>
     
     <lastmod>2021-03-27</lastmod>
     
@@ -275,14 +275,14 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/2021/03/27/Debug/[Errno%2011004]/</loc>
+    <loc>https://ycchen00.github.io/2021/03/27/Debug/[WinError%2010061]/</loc>
     
     <lastmod>2021-03-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/2021/03/27/Debug/[WinError%2010061]/</loc>
+    <loc>https://ycchen00.github.io/2021/03/27/Debug/[Errno%2011004]/</loc>
     
     <lastmod>2021-03-27</lastmod>
     
@@ -338,6 +338,13 @@
   </url>
   
   <url>
+    <loc>https://ycchen00.github.io/2021/03/27/DSci/Excel/DAExcel%E6%95%99%E7%A8%8B(DAuE%E7%AC%94%E8%AE%B0)/</loc>
+    
+    <lastmod>2021-03-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ycchen00.github.io/2021/03/27/Coursera/Intro2DS/Quiz/</loc>
     
     <lastmod>2021-03-27</lastmod>
@@ -346,13 +353,6 @@
   
   <url>
     <loc>https://ycchen00.github.io/2021/03/27/Coursera/SQL4DS/Quiz/</loc>
-    
-    <lastmod>2021-03-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/2021/03/27/DSci/Excel/DAExcel%E6%95%99%E7%A8%8B(DAuE%E7%AC%94%E8%AE%B0)/</loc>
     
     <lastmod>2021-03-27</lastmod>
     
@@ -429,20 +429,6 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/2021/03/27/Coursera/Coursera_Financial_Aid/</loc>
-    
-    <lastmod>2021-03-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/2021/03/27/Coursera/DAuE-Quiz/</loc>
-    
-    <lastmod>2021-03-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://ycchen00.github.io/2021/03/27/Coursera/DS4BI-Quiz/</loc>
     
     <lastmod>2021-03-27</lastmod>
@@ -450,7 +436,21 @@
   </url>
   
   <url>
+    <loc>https://ycchen00.github.io/2021/03/27/Coursera/Coursera_Financial_Aid/</loc>
+    
+    <lastmod>2021-03-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ycchen00.github.io/2021/03/27/Coursera/DVwP-Quiz/</loc>
+    
+    <lastmod>2021-03-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/2021/03/27/Coursera/DAuE-Quiz/</loc>
     
     <lastmod>2021-03-27</lastmod>
     
@@ -599,6 +599,34 @@
   </url>
   
   <url>
+    <loc>https://ycchen00.github.io/tags/Debug/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/tags/Google/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/tags/Colab/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/tags/GPU/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ycchen00.github.io/tags/Coursera/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
@@ -607,13 +635,6 @@
   
   <url>
     <loc>https://ycchen00.github.io/tags/DataScience/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/tags/Excel/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -635,6 +656,13 @@
   
   <url>
     <loc>https://ycchen00.github.io/tags/Visualization/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/tags/Excel/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -669,13 +697,6 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/tags/Debug/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ycchen00.github.io/tags/Google-Earth-Engine/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
@@ -690,42 +711,7 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/tags/Google/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/tags/Colab/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/tags/GPU/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ycchen00.github.io/tags/OneNote/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/tags/pip/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/tags/json/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -760,14 +746,14 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/tags/iPhone/</loc>
+    <loc>https://ycchen00.github.io/tags/Photography/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/tags/Photography/</loc>
+    <loc>https://ycchen00.github.io/tags/iPhone/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -781,21 +767,14 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/tags/Machine-learning/</loc>
+    <loc>https://ycchen00.github.io/tags/pip/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/tags/Data-analytics/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/tags/SQL/</loc>
+    <loc>https://ycchen00.github.io/tags/json/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -830,6 +809,34 @@
   </url>
   
   <url>
+    <loc>https://ycchen00.github.io/tags/Machine-learning/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/tags/Data-analytics/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/tags/SQL/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/tags/Windows/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ycchen00.github.io/tags/Jupyter-Notebook/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
@@ -838,13 +845,6 @@
   
   <url>
     <loc>https://ycchen00.github.io/tags/Markdown/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/tags/Windows/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -916,7 +916,7 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/categories/Coursera/</loc>
+    <loc>https://ycchen00.github.io/categories/Debug/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -930,7 +930,14 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/categories/Debug/</loc>
+    <loc>https://ycchen00.github.io/categories/Google/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/categories/Coursera/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -944,35 +951,7 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/categories/Coursera/DataScience/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/categories/Google/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ycchen00.github.io/categories/OneNote/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/categories/Coursera/%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/categories/Python/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -986,21 +965,21 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/categories/GEE/GEE%E5%85%A5%E9%97%A8/</loc>
+    <loc>https://ycchen00.github.io/categories/Google/Google-Colab/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/categories/Coursera/DataScience/Intro2DS/</loc>
+    <loc>https://ycchen00.github.io/categories/Coursera/DataScience/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/categories/Coursera/DataScience/SQL4DS/</loc>
+    <loc>https://ycchen00.github.io/categories/Python/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1014,6 +993,20 @@
   </url>
   
   <url>
+    <loc>https://ycchen00.github.io/categories/Coursera/%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/categories/GEE/GEE%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ycchen00.github.io/categories/GEE/GEE%E5%AE%9E%E6%88%98/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
@@ -1021,7 +1014,14 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/categories/Google/Google-Colab/</loc>
+    <loc>https://ycchen00.github.io/categories/DSci/Excel/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/categories/DSci/Visualization/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1049,21 +1049,14 @@
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/categories/DSci/Excel/</loc>
+    <loc>https://ycchen00.github.io/categories/Coursera/DataScience/Intro2DS/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ycchen00.github.io/categories/DSci/Visualization/</loc>
-    <lastmod>2021-03-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ycchen00.github.io/categories/Python/Jupyter-Notebook/</loc>
+    <loc>https://ycchen00.github.io/categories/Coursera/DataScience/SQL4DS/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1071,6 +1064,13 @@
   
   <url>
     <loc>https://ycchen00.github.io/categories/Tip/Windows/</loc>
+    <lastmod>2021-03-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ycchen00.github.io/categories/Python/Jupyter-Notebook/</loc>
     <lastmod>2021-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
